@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var agora = new Date()
+        var hora = agora.getHours()
+        document.write(`Agora são exatamente ${hora} horas.`)
+        
+        if(hora < 12 ){
+            document.write("Bom Dia")
+            document.body.style.background = "green"
+        }
+        else if (hora <=18){
+            document.write("Boa tarde")
+            document.body.style.background = "red"
+        }
+        else{
+            document.write("Boa noite")
+            document.body.style.background = "purple"
+        }
+        
+    </script>
+
+</body>
+</html>

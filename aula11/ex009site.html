@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Informe o país em que você vive:<input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="lugar()">
+    <div id="res"> Resultado</div>
+
+    <script>
+        function lugar(){
+            var pais = document.getElementById("pais").value
+            var res = document.querySelector("div#res")
+            
+            
+            res.innerHTML = `Você vive no(a) <strong>${pais}</strong>`
+            
+            if (pais != "Brasil"){
+                res.innerHTML += "<p>Você é estrangeiro</p>"
+            }
+            else{
+                res.innerHTML += "<p>Você é Brasileiro</p>"
+            }
+
+
+        }
+
+    </script>
+</body>
+</html>
