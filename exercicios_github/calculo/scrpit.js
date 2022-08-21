@@ -24,4 +24,7 @@ function calc(){
             break
 
     }
+
+
+    
 }
